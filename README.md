@@ -1,0 +1,1 @@
+This project is part of INFO 101: Introduction to Informatics, a course designed to introduce the basics of computing, data, and web technologies. The Expense Tracker serves as a hands-on practice project we, the students, applied what we learn in class to build a functional web application.
