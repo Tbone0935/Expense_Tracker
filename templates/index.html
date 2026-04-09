@@ -10,17 +10,46 @@
    <form action="/add" method="post">
     <input type="number" name="amount" placeholder="Amount" required>
     <input type="text" name="category" placeholder="Category" required>
-    <input type="text" name="note" placeholder="Note (optional)" required>
+    <input type="text" name="note" placeholder="Note (optional)">
     <button type="submit">Add</button>
     </form>
 
+<a href="/summary">Go to Summary</a>
 
+<!--Below are the optional imprvements of layout and appearance of the app-->
+<style>
+    /* Style Summary Button */
+    a {
+        background: #0178af;
+        color: white;
+        padding: 8px 8px;
+        text-decoration: none;
+        border-radius: 2px;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+    /* Style Add Button */
+    button {
+    background-color: #4CAF50; /* green */
+    color: white;
+    padding: 8px 8px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    }
+    /* Add spacing above the Expenses header */
+    a {
+        margin-top: 20px;
+    }
+</style>
+   
     <h2>Expenses</h2>
     <ul>
     {% for e in expenses %}
         <li>{{ e.category }}: ${{ e.amount }}</li>
     {% endfor %}
     </ul>
+       
 
 
 </body>
